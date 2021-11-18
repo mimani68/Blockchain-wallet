@@ -15,11 +15,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	for i := 1; i < 20; i++ {
-		a := fmt.Sprintf("m/44'/60'/0'/0/%d", i)
+	for i := 0; i < 5; i++ {
+		path := fmt.Sprintf("m/44'/60'/0'/0/%d", i)
 		fmt.Printf("=========| %d |=======\n", i)
-		path := hdwallet.MustParseDerivationPath(a)
-		account, err := wallet.Derive(path, false)
+		pathHD := hdwallet.MustParseDerivationPath(path)
+		account, err := wallet.Derive(pathHD, false)
 		if err != nil {
 			log.Fatal(err)
 		}

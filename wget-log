@@ -1,0 +1,5 @@
+Warning: wildcards not supported in HTTP.
+--2021-11-18 10:07:49--  https://miro.medium.com/max/1400/1*wa3Wknzgr6nS8ZrQQf2N6g.png
+Resolving miro.medium.com (miro.medium.com)... 162.159.152.4, 162.159.153.4, 2606:4700:7::a29f:9804, ...
+Connecting to miro.medium.com (miro.medium.com)|162.159.152.4|:443... connected.
+Unable to establish SSL connection.
