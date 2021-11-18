@@ -57,26 +57,3 @@ func createDepositeAddress(mnemonic string) {
 func accumolativeBalanceOfWallet(mnemonic string) {
 	fmt.Println("Comming soon")
 }
-
-func main() {
-	//
-	// This password most store permamanetly, do not share this one.
-	// $ go run mnemonic.go
-	//
-	mnemonic := "tonight capital wing name satisfy mule grace next mansion very retreat emotion"
-
-	//
-	// You can create unlimit account for each wallet
-	//
-	createDepositeAddress(mnemonic)
-
-	//
-	// With above paswrod we can restore specidif account
-	//
-	recoverAccount(mnemonic, 52)
-
-	//
-	// Aggregate remain value in each address wallet
-	//
-	accumolativeBalanceOfWallet(mnemonic)
-}

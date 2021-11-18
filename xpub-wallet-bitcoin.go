@@ -6,7 +6,7 @@ import (
 	hdwallet "github.com/wemeetagain/go-hdwallet"
 )
 
-func main() {
+func bitCoinDepisteAddress() {
 	// Generate a random 256 bit seed
 	seed, err := hdwallet.GenSeed(256)
 	if err != nil {

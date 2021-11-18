@@ -9,7 +9,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 )
 
-func main() {
+func createOldWallet() {
 	privateKey, err := crypto.GenerateKey()
 	if err != nil {
 		log.Fatal(err)
@@ -18,7 +18,6 @@ func main() {
 	privateKeyBytes := crypto.FromECDSA(privateKey)
 	fmt.Println("SAVE BUT DO NOT SHARE THIS (Private Key):", hexutil.Encode(privateKeyBytes))
 
-	fmt.Printf("=========| %d |========\n", i)
 	publicKey := privateKey.Public()
 	publicKeyECDSA, ok := publicKey.(*ecdsa.PublicKey)
 	if !ok {

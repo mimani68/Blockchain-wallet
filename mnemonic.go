@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	bip39 "github.com/tyler-smith/go-bip39"
 )
 
@@ -19,9 +17,4 @@ func mnemonicGenerator() (*string, error) {
 	}
 
 	return &mnemonic, nil
-}
-
-func main() {
-	a, _ := mnemonicGenerator()
-	fmt.Println(*a)
 }
