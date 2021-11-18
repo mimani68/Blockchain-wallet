@@ -5,6 +5,13 @@
 
 ```bash
 export GOPROXY=https://goproxy.io,direct
+go run *.go
+```
+
+## Build
+
+```bash
+go build -o ./bin/app *.go
 ```
 
 ![](wallet.png)
