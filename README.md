@@ -14,7 +14,11 @@ go run *.go
 go build -o ./bin/app *.go
 ```
 
+## About wallet in blockchain
+
 ![](wallet.png)
+
+### Refrence
 
 * https://arshbot.medium.com/so-you-want-to-build-an-ethereum-hd-wallet-cb2b7d7e4998
 * https://arshbot.medium.com/hd-wallets-explained-from-high-level-to-nuts-and-bolts-9a41545f5b0
