@@ -57,3 +57,18 @@ func createDepositeAddress(mnemonic string) {
 func accumolativeBalanceOfWallet(mnemonic string) {
 	fmt.Println("Comming soon")
 }
+
+func dev(mnemonic string, path string) {
+	fmt.Printf("Path: %s \n", path)
+	wallet, err := hdwallet.NewFromMnemonic(mnemonic)
+	if err != nil {
+		log.Fatal(err)
+	}
+	pathHD := hdwallet.MustParseDerivationPath(path)
+	account, err := wallet.Derive(pathHD, false)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("Address: %s\n", account.Address.Hex())
+}
